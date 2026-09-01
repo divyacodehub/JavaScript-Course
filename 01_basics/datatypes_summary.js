@@ -45,3 +45,25 @@ console.log(typeof bigNum);
 
 
 
+// ****************************************************
+
+//Stack(primitive) heap(non-primitive)
+
+let myname = "divya"
+let anothername = myname
+anothername = "hello"
+console.log(anothername);
+console.log(myname);
+
+let userOne = {
+    email: "divya@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hello@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
