@@ -36,51 +36,14 @@ console.log(newDate.toLocaleString('default', {
 }))
 
 
-// Modern JavaScript: Temporal API
-
-// 1. PlainDate - Date only
-const date = Temporal.PlainDate.from("2026-09-03");
-console.log(date);
-
-
-// 2. PlainTime - Time only
-const time = Temporal.PlainTime.from("10:30:00");
-console.log(time);
-
-
-// 3. PlainDateTime - Date + Time
-const dateTime = Temporal.PlainDateTime.from("2026-09-03T10:30:00");
-console.log(dateTime);
-
-
-// 4. ZonedDateTime - Date + Time + Timezone
-const zonedDateTime = Temporal.ZonedDateTime.from(
-    "2026-09-03T10:30:00+05:30[Asia/Kolkata]"
-);
-console.log(zonedDateTime);
-
-
-// 5. Instant - Exact moment in time
-const instant = Temporal.Instant.from("2026-09-03T05:00:00Z");
-console.log(instant);
-
-
-// 6. Duration - Amount of time
-const duration = Temporal.Duration.from({
-    hours: 2,
-    minutes: 30
-});
-console.log(duration);
-
-
-// 7. Temporal is immutable
-const today = Temporal.PlainDate.from("2026-09-03");
-
-const nextWeek = today.add({
-    days: 7
-});
-
-console.log(today);     // 2026-09-03
-console.log(nextWeek);  // 2026-09-10
-
-
+// Modern Update: Temporal API
+// Temporal is a newer JavaScript API for working with dates and times.
+//
+// Temporal.PlainDate      -> date only
+// Temporal.PlainTime      -> time only
+// Temporal.PlainDateTime  -> date + time
+// Temporal.ZonedDateTime  -> date + time + timezone
+// Temporal.Instant        -> exact moment in time
+// Temporal.Duration       -> amount of time
+//
+// Learn Temporal separately later.
